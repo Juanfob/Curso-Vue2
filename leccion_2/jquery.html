@@ -6,7 +6,6 @@
 
         <meta name="description" content="Curso de Vue 2">
         <meta name="author" content="https://styde.net">
-        <link rel="icon" href="favicon.ico">
 
         <title>Curso de Vue 2 - Styde.net</title>
 
@@ -53,11 +52,11 @@
                         if($('#first_name').val() != "" && $('#last_name').val() != ""){
                             $('#btn_continue').removeAttribute('disabled');
                         }else{
-                            $('#btn_continue').attr('disabled', 'disabled');
+                            $('#btn_continue').attributes('disabled', 'disabled');
                         }
                     }
 
-                    $('#first_name','#last_name').onkeyup(toogleEnableContinue);
+                    $('#first_name','#last_name').keyup(toggleEnableContinue);
                 });
             </script>
 
